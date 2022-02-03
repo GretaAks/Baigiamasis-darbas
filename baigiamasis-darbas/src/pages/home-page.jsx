@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
-import Image from '../img/header.jpeg';
+
 
 
 const styles = {
     box: {
-        backgroundImage: `url(${Image})`,  
+        backgroundImage: 'url(https://source.unsplash.com/random)',  
         display: 'relative',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -19,7 +19,7 @@ const styles = {
 const HomePage = () => {
         return(
           <>
-          <CssBaseline/>
+          <CssBaseline>
             <Box style={styles.box}>
               <Box sx={{
               position: 'relative',
@@ -37,6 +37,7 @@ const HomePage = () => {
             </Box>
             </Box>
             </Box>
+            </CssBaseline>
             </>
         )
     
